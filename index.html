@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wikipedia Search Engine</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Bootstrap CDN for spinner and utility classes -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  
+</head>
+
+<body>
+  <!-- Particles Background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <div class="main">
+    <!-- Header -->
+    <div class="container">
+      <div class="header">
+        <h1>WIKIPEDIA SEARCH</h1>
+        <p>Discover knowledge from the world's largest encyclopedia</p>
+      </div>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-section">
+      <div class="search">
+        <input id="search" type="search" placeholder=" Search Anything.....">
+      </div>
+      <div class="btn">
+        <button id="searchBtn" class="searchBtn">Search</button>
+        <button id="clearBtn" class="clearBtn">Clear Result</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spinner -->
+  <div class="text-center d-none" id="spinner">
+    <span class="load">Loading...</span>
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Result Section -->
+  <div id="result"></div>
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
