@@ -25,6 +25,8 @@ body {
 
 .main {
     filter: drop-shadow(3px 3px 15px rgba(139, 108, 108, 0.853));
+    width: 60vw;
+    text-align: center;
 }
 
 .container {
@@ -85,10 +87,11 @@ body {
 }
 
 .btn {
+    width: 100%;
     display: flex;
     justify-content: center;
-    outline: none;
-    border: none;
+    outline: none !important;
+    border: none !important;
 }
 
 @media (max-width: 768px) {
@@ -188,4 +191,27 @@ body {
 .des-style {
     margin-top: 20px;
     color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 480px) {
+    .container,
+    .search-section,
+    .result-style {
+        padding: 15px;
+    }
+
+    .searchBtn,
+    .clearBtn {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .title-style {
+        font-size: 18px;
+    }
+
+    .load {
+        font-size: 20px;
+    }
 }
